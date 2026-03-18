@@ -1,64 +1,96 @@
+<p align="center">
+  <img src="banner.png" alt="Jarvis Python Voice Assistant Banner" width="100%">
+</p>
+
 # 🎙️ Jarvis - Python Voice Assistant
 
-A **Python-based Voice Assistant** inspired by Iron Man's J.A.R.V.I.S that can perform various tasks using voice commands such as searching Wikipedia, opening applications, playing music, reading news headlines, and more.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows-green)
+![Made With Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)
 
-This project demonstrates the use of **Speech Recognition, Text-to-Speech, Web Automation, and Python scripting** to build a simple but powerful personal assistant.
+A **Python-based Voice Assistant inspired by Iron Man's J.A.R.V.I.S** that performs tasks using voice commands such as searching Wikipedia, opening applications, playing music, and reading news headlines.
 
----
-
-## 🚀 Features
-
-* 🎤 Voice command recognition
-
-* 🔊 Text-to-speech responses
-
-* 🌐 Search information from **Wikipedia**
-
-* 📺 Open websites like:
-
-  * YouTube
-  * Google
-  * StackOverflow
-  * WhatsApp Web
-  * CGTrader
-  * TurboSquid
-
-* 🎵 Play random music from your system
-
-* 📰 Read latest news headlines
-
-* 🧠 "How To Do" mode using WikiHow
-
-* ⌚ Tell the current time
-
-* 💻 Open system applications:
-
-  * Notepad
-  * Command Prompt
-  * Visual Studio Code
-  * Discord
-
-* 🪟 Window switching automation
-
-* 🧾 Fetch technology, politics, sports, and cricket news
+This project demonstrates **Speech Recognition, Text-to-Speech, Web Automation, and Python scripting** to create a simple but powerful desktop voice assistant.
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 Features
+
+### 🎤 Voice Interaction
+
+* Voice command recognition
+* Natural text-to-speech responses
+
+### 🌐 Web Automation
+
+Open websites using voice commands:
+
+* YouTube
+* Google
+* StackOverflow
+* WhatsApp Web
+* CGTrader
+* TurboSquid
+
+### 💻 System Automation
+
+Control applications with voice:
+
+* Notepad
+* Command Prompt
+* Visual Studio Code
+* Discord
+* Window switching
+
+### 🎵 Entertainment
+
+* Play random music from your computer
+* Fetch latest news headlines
+
+### 🧠 Knowledge Assistant
+
+* Wikipedia search
+* WikiHow "How To" mode
+
+---
+
+# 📰 News Module
+
+The project includes a separate module **`NewsRead.py`** which fetches and reads the latest news headlines.
+
+This module uses **NewsAPI** to retrieve real-time news updates and converts them into speech using `pyttsx3`.
+
+### Supported Categories
+
+* Technology
+* Politics
+* Sports
+* Cricket
+
+Example commands:
+
+* "News"
+* "Tech news"
+* "Sports news"
+* "Cricket news"
+
+---
+
+# 🛠 Tech Stack
 
 ### Language
 
 * Python 3
 
-### Libraries Used
+### Libraries
 
-* `pyttsx3` – Text to Speech
-* `speech_recognition` – Voice command recognition
-* `wikipedia` – Wikipedia API access
-* `pyautogui` – Keyboard automation
-* `GoogleNews` – Fetch news headlines
-* `pywikihow` – How-to search functionality
-* `webbrowser` – Open websites
+* `pyttsx3` – Text-to-Speech engine
+* `SpeechRecognition` – Voice recognition
+* `wikipedia`
+* `pyautogui`
+* `GoogleNews`
+* `pywikihow`
+* `webbrowser`
 * `datetime`
 * `random`
 * `os`
@@ -66,40 +98,72 @@ This project demonstrates the use of **Speech Recognition, Text-to-Speech, Web A
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/jarvis-voice-assistant.git
-cd jarvis-voice-assistant
+git clone https://github.com/your-username/jarvis-python-voice-assistant.git
+cd jarvis-python-voice-assistant
 ```
 
-Install required dependencies
+Install dependencies
 
 ```bash
-pip install pyttsx3
-pip install SpeechRecognition
-pip install wikipedia
-pip install pyautogui
-pip install GoogleNews
-pip install pywikihow
-pip install pyaudio
+pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Running the Project
+# 🔑 NewsAPI Setup (Required for News Feature)
 
-Run the Python script:
+The news feature requires a **NewsAPI key**.
+
+### Step 1 — Create an Account
+
+Visit:
+
+https://newsapi.org
+
+Sign up for a free account.
+
+### Step 2 — Get Your API Key
+
+After signing in, you will find your **API key** in the dashboard.
+
+Example:
+
+```
+123abc456def789
+```
+
+### Step 3 — Add the API Key
+
+Open:
+
+```
+NewsRead.py
+```
+
+Replace the placeholder with your key:
+
+```python
+api_key = "YOUR_API_KEY"
+```
+
+---
+
+# ▶ Running the Project
+
+Start the assistant by running:
 
 ```bash
 python jarvis.py
 ```
 
-After running, the assistant will greet you and start listening for commands.
+Jarvis will greet you and start listening for commands.
 
-### Example commands
+### Example Commands
 
 * "Open YouTube"
 * "Search Wikipedia for Artificial Intelligence"
@@ -113,40 +177,55 @@ After running, the assistant will greet you and start listening for commands.
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
-Jarvis-Voice-Assistant
+jarvis-python-voice-assistant
 │
+├── banner.png
 ├── jarvis.py
 ├── NewsRead.py
-├── README.md
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 🧠 How It Works
+# 🧠 How It Works
 
-1. The program uses **SpeechRecognition** to capture voice input from the microphone.
-2. The speech is converted into text using **Google Speech API**.
-3. Based on the detected command, different Python functions are triggered.
-4. Responses are spoken back using **pyttsx3 text-to-speech engine**.
-
----
-
-## ⚠️ Notes
-
-* This project currently works best on **Windows** because it uses the **SAPI5 speech engine**.
-* Some application paths may need to be changed depending on your system.
-* A working **microphone** is required.
+1. The program listens to the microphone using **SpeechRecognition**.
+2. The voice is converted to text using the **Google Speech API**.
+3. Jarvis analyzes the command and selects the correct function.
+4. The response is spoken using **pyttsx3 text-to-speech engine**.
+5. Some commands trigger web automation, system applications, or the news module.
 
 ---
 
-## 👨‍💻 Author
+# ⚠️ Notes
+
+* Works best on **Windows** because it uses the **SAPI5 speech engine**.
+* Some application paths (music folder, programs) may need modification.
+* Requires a **working microphone**.
+
+---
+
+# 🔮 Future Improvements
+
+* Graphical user interface (GUI)
+* AI conversational abilities
+* Integration with ChatGPT / LLM
+* Smart home automation
+* Task scheduling
+* Weather assistant
+* Email automation
+
+---
+
+# 👨‍💻 Author
 
 **Debayan Ghosh**
 
-Aspiring developer interested in:
+Interests:
 
 * Artificial Intelligence
 * Automation
@@ -157,6 +236,6 @@ GitHub: https://github.com/Debayan-G
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you found this project useful, consider **starring ⭐ the repository** to support the project.
+If you found this project useful, please consider **starring the repository ⭐**.
