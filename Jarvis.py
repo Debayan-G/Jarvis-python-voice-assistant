@@ -10,12 +10,11 @@ import pyautogui
 import random
 from pywikihow import search_wikihow
 from GoogleNews import GoogleNews as googlenews
-#from sketchpy import library as lib
 import os
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
+engine.setProperty('voice', voices[1].id)
 
 def speak(audio):
     engine.say(audio)
@@ -71,7 +70,7 @@ if __name__ == "__main__":
 
         elif 'open notepad' in query:
             speak("Opening notepad....")
-            notepadpath = "C:\\Windows\\notepad.exe"
+            notepadpath = "Copy The Notepad.exe path from your computer and paste it here "     # Example: notepadpath = "C:\\Windows\\notepad.exe"
             os.startfile(notepadpath)
 
         elif 'open google' in query:
@@ -93,7 +92,7 @@ if __name__ == "__main__":
 
         elif 'movies' in query:
             speak("Finding Some Movies For You....")
-            webbrowser.open("divicast.com")
+            webbrowser.open("https://www.rottentomatoes.com/browse/movies_in_theaters/")
 
         elif 'play music' in query:
             speak("Playing Music....")
@@ -108,19 +107,14 @@ if __name__ == "__main__":
 
         elif 'open code' in query:
             speak("Opening Visual Studio Code....")
-            codepath = "D:\\Visual Studio Code\\Microsoft VS Code\\Code.exe"
+            codepath = "Copy The Code.exe path from your computer and paste it here"   # Example: codepath = "D:\\Visual Studio Code\\Microsoft VS Code\\Code.exe"
             os.startfile(codepath)
         
         elif 'open discord' in query:
             speak("Opening Discord....")
-            discordpath = "C:\\Users\\ghosh\\AppData\\Local\\Discord\\Update.exe"
+            discordpath = "Copy The Discord.exe path from your computer and it here" # Example: discordpath = "C:\\Users\\ghosh\\AppData\\Local\\Discord\\Discord.exe"
             os.startfile(discordpath)
-
-        #elif 'draw iron man' in query:
-            #speak("Drawing Iron Man....")
-            #obj = lib.rdj()
-            #obj.draw()
-
+            
         elif 'open command prompt' in query:
             speak("Opening Command....")
             os.system("start cmd")
