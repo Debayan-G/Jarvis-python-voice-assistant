@@ -203,16 +203,6 @@ jarvis-python-voice-assistant
 
 ---
 
-# 🔮 Future Improvements
-
-* Graphical user interface (GUI)
-* AI conversational abilities
-* Integration with ChatGPT / LLM
-* Smart home automation
-* Task scheduling
-* Weather assistant
-* Email automation
-
 ---
 
 # 👨‍💻 Author
