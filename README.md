@@ -107,12 +107,6 @@ git clone https://github.com/your-username/jarvis-python-voice-assistant.git
 cd jarvis-python-voice-assistant
 ```
 
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 # 🔑 NewsAPI Setup (Required for News Feature)
