@@ -203,8 +203,6 @@ jarvis-python-voice-assistant
 
 ---
 
----
-
 # 👨‍💻 Author
 
 **Debayan Ghosh**
@@ -214,7 +212,7 @@ Interests:
 * Artificial Intelligence
 * Automation
 * Game Development
-* Financial Technology
+* Game Environment Design
 
 GitHub: https://github.com/Debayan-G
 
