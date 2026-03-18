@@ -222,4 +222,4 @@ GitHub: https://github.com/Debayan-G
 
 # ⭐ Support
 
-If you found this project useful, please consider **starring the repository ⭐**.
+If You Found This Project Useful, Please Consider **Starring The Repository ⭐**.
