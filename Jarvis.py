@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
         elif 'play music' in query:
             speak("Playing Music....")
-            music_dir = 'D:\\Music'
+            music_dir = 'Paste The Path Of The Music Folder' #Example: music_dir = 'D:\\Music'
             songs = os.listdir(music_dir)
             a = random.choice(songs)
             os.startfile(os.path.join(music_dir, a))
