@@ -12,12 +12,12 @@ def speak(audio):
     engine.runAndWait()
 
 def latestnews():
-    api_dict = {"business" : "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=aceafc009f75421e9f1bad0ffc8e3531",
-            "entertainment" : "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=aceafc009f75421e9f1bad0ffc8e3531",
-            "health" : "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=aceafc009f75421e9f1bad0ffc8e3531",
-            "science" :"https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=aceafc009f75421e9f1bad0ffc8e3531",
-            "sports" :"https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=aceafc009f75421e9f1bad0ffc8e3531",
-            "technology" :"https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=aceafc009f75421e9f1bad0ffc8e3531"
+    api_dict = {"business" : "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey= api_key ", # Put your API key in the place of api_key donot leave any space EXAMPLE:  "business" : "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=123abc456def789ghi"
+            "entertainment" : "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey= api_key ",
+            "health" : "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey= api_key ",
+            "science" :"https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey= api_key ",
+            "sports" :"https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey= api_key ",
+            "technology" :"https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey= api_key "
 }
 
     content = None
